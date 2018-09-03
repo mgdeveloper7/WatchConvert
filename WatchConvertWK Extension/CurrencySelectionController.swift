@@ -48,7 +48,14 @@ class CurrencySelectionController: WKInterfaceController {
     func getCurrencyDataFromService(){
         
         // NOTE:  This function is called from a background thread
-        let url = GlobalConstants.TestExchangeURL
+        var url = ""
+        
+        if GlobalConstants.UseTestDataURLs {
+            url = GlobalConstants.TestExchangeURL
+        }
+        else {
+            url = GlobalConstants.FixerIOBaseURL + GlobalConstants.FixerIOParamLatest + "?access_key=" + GlobalConstants.FixerIOAPIKey + "&base=EUR"
+        }
         
         print("URL= " + url)
         
