@@ -31,7 +31,7 @@
                         <label alignment="center" verticalAlignment="center" text="Getting latest" textAlignment="center" numberOfLines="2" minimumScaleFactor="0.5" id="hxg-4k-yc7">
                             <fontDescription key="font" type="system" pointSize="12"/>
                         </label>
-                        <button width="115" height="20" alignment="center" verticalAlignment="bottom" title="Next" id="bUX-Zc-WHt">
+                        <button width="128" height="21" alignment="center" verticalAlignment="bottom" title="Next" id="bUX-Zc-WHt">
                             <color key="backgroundColor" red="0.81190321180000002" green="0.090826662559999993" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="nextButtonPressed" destination="NnN-qU-8hN" id="8JR-z0-QkQ"/>
@@ -77,22 +77,26 @@
                         </group>
                         <group width="1" height="32" alignment="center" id="F6i-ai-ZXG">
                             <items>
-                                <button width="28" height="27" alignment="center" title="1" id="6Fi-XY-mki">
+                                <button width="30" height="31" alignment="center" title="1" id="6Fi-XY-mki">
+                                    <fontDescription key="font" type="system" pointSize="17"/>
                                     <connections>
                                         <action selector="oneButtonPressed" destination="AgC-eL-Hgc" id="DSg-5O-OEs"/>
                                     </connections>
                                 </button>
-                                <button width="28" height="27" alignment="center" title="2" id="pMV-Qb-gZc">
+                                <button width="30" height="31" alignment="center" title="2" id="pMV-Qb-gZc">
+                                    <fontDescription key="font" type="system" pointSize="17"/>
                                     <connections>
                                         <action selector="twoButtonPressed" destination="AgC-eL-Hgc" id="36k-ru-MHC"/>
                                     </connections>
                                 </button>
-                                <button width="28" height="27" alignment="center" title="3" id="idH-Tb-dSb">
+                                <button width="30" height="31" alignment="center" title="3" id="idH-Tb-dSb">
+                                    <fontDescription key="font" type="system" pointSize="17"/>
                                     <connections>
                                         <action selector="threeButtonPressed" destination="AgC-eL-Hgc" id="h5o-2B-HTw"/>
                                     </connections>
                                 </button>
-                                <button width="28" height="27" alignment="center" title="&lt;" id="emH-qm-5Te">
+                                <button width="30" height="31" alignment="center" title="&lt;" id="emH-qm-5Te">
+                                    <fontDescription key="font" type="system" pointSize="17"/>
                                     <connections>
                                         <action selector="backspaceButtonPressed" destination="AgC-eL-Hgc" id="1wM-Wq-JJS"/>
                                     </connections>
@@ -101,22 +105,26 @@
                         </group>
                         <group width="1" height="32" alignment="center" id="uBU-M9-KAj">
                             <items>
-                                <button width="28" height="27" alignment="center" title="4" id="K3i-j0-Dfb">
+                                <button width="30" height="31" alignment="center" title="4" id="K3i-j0-Dfb">
+                                    <fontDescription key="font" type="system" pointSize="17"/>
                                     <connections>
                                         <action selector="fourButtonPressed" destination="AgC-eL-Hgc" id="Ire-aV-JzX"/>
                                     </connections>
                                 </button>
-                                <button width="28" height="27" alignment="center" title="5" id="dDe-JZ-vrc">
+                                <button width="30" height="31" alignment="center" title="5" id="dDe-JZ-vrc">
+                                    <fontDescription key="font" type="system" pointSize="17"/>
                                     <connections>
                                         <action selector="fiveButtonPressed" destination="AgC-eL-Hgc" id="r6F-5E-1S6"/>
                                     </connections>
                                 </button>
-                                <button width="28" height="27" alignment="center" title="6" id="qEo-77-QrS">
+                                <button width="30" height="31" alignment="center" title="6" id="qEo-77-QrS">
+                                    <fontDescription key="font" type="system" pointSize="17"/>
                                     <connections>
                                         <action selector="sixButtonPressed" destination="AgC-eL-Hgc" id="dp7-tD-2i3"/>
                                     </connections>
                                 </button>
-                                <button width="28" height="27" alignment="center" title="." id="bJt-PM-Sp8">
+                                <button width="30" height="31" alignment="center" title="." id="bJt-PM-Sp8">
+                                    <fontDescription key="font" type="system" pointSize="17"/>
                                     <connections>
                                         <action selector="decimalButtonPressed" destination="AgC-eL-Hgc" id="ItU-mz-J9Q"/>
                                     </connections>
@@ -125,22 +133,26 @@
                         </group>
                         <group width="1" height="32" alignment="center" id="3Ih-Hl-V3B">
                             <items>
-                                <button width="28" height="27" alignment="center" title="7" id="51u-1q-hJs">
+                                <button width="30" height="31" alignment="center" title="7" id="51u-1q-hJs">
+                                    <fontDescription key="font" type="system" pointSize="17"/>
                                     <connections>
                                         <action selector="sevenButtonPressed" destination="AgC-eL-Hgc" id="Tgj-tI-Uqc"/>
                                     </connections>
                                 </button>
-                                <button width="28" height="27" alignment="center" title="8" id="TyB-Mb-3QA">
+                                <button width="30" height="31" alignment="center" title="8" id="TyB-Mb-3QA">
+                                    <fontDescription key="font" type="system" pointSize="17"/>
                                     <connections>
                                         <action selector="eightButtonPressed" destination="AgC-eL-Hgc" id="JzR-2l-Sez"/>
                                     </connections>
                                 </button>
-                                <button width="28" height="27" alignment="center" title="9" id="K1i-hv-q1x">
+                                <button width="30" height="31" alignment="center" title="9" id="K1i-hv-q1x">
+                                    <fontDescription key="font" type="system" pointSize="17"/>
                                     <connections>
                                         <action selector="nineButtonPressed" destination="AgC-eL-Hgc" id="bIM-2c-zcM"/>
                                     </connections>
                                 </button>
-                                <button width="28" height="27" alignment="center" title="0" id="Bfe-1y-v6u">
+                                <button width="30" height="31" alignment="center" title="0" id="Bfe-1y-v6u">
+                                    <fontDescription key="font" type="system" pointSize="17"/>
                                     <connections>
                                         <action selector="zeroButtonPressed" destination="AgC-eL-Hgc" id="O1N-FQ-873"/>
                                     </connections>
@@ -149,9 +161,9 @@
                         </group>
                         <group width="1" height="18" alignment="center" id="4Vi-Gx-VxQ">
                             <items>
-                                <button width="115" height="20" alignment="center" verticalAlignment="center" title="Convert" id="hAI-8j-uUs">
+                                <button width="128" height="21" alignment="center" verticalAlignment="bottom" title="Convert" id="hAI-8j-uUs">
                                     <color key="backgroundColor" red="0.81190321180000002" green="0.090826662559999993" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                    <fontDescription key="font" type="system" pointSize="15"/>
                                     <connections>
                                         <action selector="equalsButtonPressed" destination="AgC-eL-Hgc" id="8vS-R3-1ZB"/>
                                     </connections>

@@ -41,7 +41,15 @@ class ConversionDisplayController: WKInterfaceController {
         currencyFromLabel.setText(currencyFrom + "=")
         currencyToLabel.setText(currencyTo)
         
-        convertCurrency(fromValue: Double(currencyFromValue)!, conversionFactor: conversionRateForCurrency)
+        if currencyFromValue != "" {
+            if Double(currencyFromValue)! > 0.0 {
+                convertCurrency(fromValue: Double(currencyFromValue)!, conversionFactor: conversionRateForCurrency)
+            }
+        }
+        else {
+            convertToValue.setText("")
+            currencyToLabel.setText("")
+        }
     }
 
     override func willActivate() {

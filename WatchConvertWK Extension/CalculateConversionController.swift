@@ -51,6 +51,8 @@ class CalculateConversionController: WKInterfaceController {
         
         currencyFromLabel.setText(currencyFrom)
         currencyToLabel.setText(currencyTo)
+        
+        disableCalculateButton()
     }
     
     override func willActivate() {
@@ -108,9 +110,13 @@ class CalculateConversionController: WKInterfaceController {
     
     @IBAction func decimalButtonPressed() {
         
-        if !decimalPointEntered {
-            processNumericalButtonPress(value: ".")
-            decimalPointEntered = true
+        if currencyFromValue != "" {
+
+            if !decimalPointEntered {
+                processNumericalButtonPress(value: ".")
+                decimalPointEntered = true
+            }
+
         }
     }
     
@@ -119,8 +125,13 @@ class CalculateConversionController: WKInterfaceController {
         if currencyFromValue .last == "." {
             decimalPointEntered = false
         }
+        
         currencyFromValue = String(currencyFromValue .dropLast())
         convertFromValue.setText(currencyFromValue)
+        
+        if currencyFromValue == "" {
+            disableCalculateButton()
+        }
     }
     
     @IBAction func equalsButtonPressed() {
@@ -132,8 +143,17 @@ class CalculateConversionController: WKInterfaceController {
         // - Converted Value
         // - Converted Value units
         
-        conversionRateForCurrency = Utility.findExchangeRate(currency: currencyTo, exchangeRates: exchangeRates!)
-        navigateToConversionDisplayPage()
+        if currencyFromValue != "" {
+            if Double(currencyFromValue)! > 0.0 {
+                conversionRateForCurrency = Utility.findExchangeRate(currency: currencyTo, exchangeRates: exchangeRates!)
+                navigateToConversionDisplayPage()
+            }
+        }
+        else {
+//            convertToValue.setText("")
+//            currencyToLabel.setText("")
+        }
+        
     }
     
     
@@ -142,6 +162,16 @@ class CalculateConversionController: WKInterfaceController {
         // Append whatever button press into the convert from label
         currencyFromValue  = currencyFromValue  + value
         convertFromValue.setText(currencyFromValue)
+        
+        enableCalculateButton()
+    }
+    
+    func enableCalculateButton() {
+        equalbutton.setEnabled(true)
+    }
+    
+    func disableCalculateButton() {
+        equalbutton.setEnabled(false)
     }
     
     
