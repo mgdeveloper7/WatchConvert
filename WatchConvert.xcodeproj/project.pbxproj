@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		96600EFB20FCF3CF00CEBF35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96600EFA20FCF3CF00CEBF35 /* AppDelegate.swift */; };
-		96600EFD20FCF3CF00CEBF35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96600EFC20FCF3CF00CEBF35 /* ViewController.swift */; };
 		96600F0020FCF3CF00CEBF35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96600EFE20FCF3CF00CEBF35 /* Main.storyboard */; };
 		96600F0220FCF3D000CEBF35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96600F0120FCF3D000CEBF35 /* Assets.xcassets */; };
 		96600F0520FCF3D000CEBF35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96600F0320FCF3D000CEBF35 /* LaunchScreen.storyboard */; };
@@ -33,6 +32,7 @@
 		96600F4B20FE317300CEBF35 /* Rates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96600F1A20FDF10500CEBF35 /* Rates.swift */; };
 		96600F4E20FE414400CEBF35 /* CurrencySelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96600F4D20FE414400CEBF35 /* CurrencySelectionController.swift */; };
 		96600F5020FE43BC00CEBF35 /* CalculateConversionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96600F4F20FE43BC00CEBF35 /* CalculateConversionController.swift */; };
+		967D442B213E9DAC00C8AFE8 /* CurrencySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967D442A213E9DAC00C8AFE8 /* CurrencySelectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +80,6 @@
 /* Begin PBXFileReference section */
 		96600EF720FCF3CF00CEBF35 /* WatchConvert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchConvert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96600EFA20FCF3CF00CEBF35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		96600EFC20FCF3CF00CEBF35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96600EFF20FCF3CF00CEBF35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96600F0120FCF3D000CEBF35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96600F0420FCF3D000CEBF35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,6 +103,7 @@
 		96600F4520FE22DD00CEBF35 /* ConversionDisplayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionDisplayController.swift; sourceTree = "<group>"; };
 		96600F4D20FE414400CEBF35 /* CurrencySelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectionController.swift; sourceTree = "<group>"; };
 		96600F4F20FE43BC00CEBF35 /* CalculateConversionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateConversionController.swift; sourceTree = "<group>"; };
+		967D442A213E9DAC00C8AFE8 /* CurrencySelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,8 +151,8 @@
 				96600F1220FCF90800CEBF35 /* REST */,
 				96600F0F20FCF71300CEBF35 /* Constants */,
 				96600F0C20FCF3E700CEBF35 /* Model */,
+				967D4429213E991400C8AFE8 /* ViewControllers */,
 				96600EFA20FCF3CF00CEBF35 /* AppDelegate.swift */,
-				96600EFC20FCF3CF00CEBF35 /* ViewController.swift */,
 				96600EFE20FCF3CF00CEBF35 /* Main.storyboard */,
 				96600F0120FCF3D000CEBF35 /* Assets.xcassets */,
 				96600F0320FCF3D000CEBF35 /* LaunchScreen.storyboard */,
@@ -234,6 +234,14 @@
 			children = (
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		967D4429213E991400C8AFE8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				967D442A213E9DAC00C8AFE8 /* CurrencySelectViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,9 +377,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96600EFD20FCF3CF00CEBF35 /* ViewController.swift in Sources */,
 				96600F0E20FCF4D200CEBF35 /* ExchangeRates.swift in Sources */,
 				96600F1720FCFBC800CEBF35 /* Utility.swift in Sources */,
+				967D442B213E9DAC00C8AFE8 /* CurrencySelectViewController.swift in Sources */,
 				96600F1120FCF75200CEBF35 /* GlobalConstants.swift in Sources */,
 				96600F1B20FDF10500CEBF35 /* Rates.swift in Sources */,
 				96600F1420FCF93F00CEBF35 /* GetExchangeData.swift in Sources */,
