@@ -33,6 +33,9 @@
 		96600F4E20FE414400CEBF35 /* CurrencySelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96600F4D20FE414400CEBF35 /* CurrencySelectionController.swift */; };
 		96600F5020FE43BC00CEBF35 /* CalculateConversionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96600F4F20FE43BC00CEBF35 /* CalculateConversionController.swift */; };
 		967D442B213E9DAC00C8AFE8 /* CurrencySelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967D442A213E9DAC00C8AFE8 /* CurrencySelectViewController.swift */; };
+		96B88E892175E65400A891E3 /* CurrencyNames.json in Resources */ = {isa = PBXBuildFile; fileRef = 96B88E882175E65400A891E3 /* CurrencyNames.json */; };
+		96B88E8B2175E74B00A891E3 /* CurrencyCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B88E8A2175E74B00A891E3 /* CurrencyCodes.swift */; };
+		96B88E8D2175E89B00A891E3 /* GetCurrencyLookupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B88E8C2175E89B00A891E3 /* GetCurrencyLookupData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +107,9 @@
 		96600F4D20FE414400CEBF35 /* CurrencySelectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectionController.swift; sourceTree = "<group>"; };
 		96600F4F20FE43BC00CEBF35 /* CalculateConversionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateConversionController.swift; sourceTree = "<group>"; };
 		967D442A213E9DAC00C8AFE8 /* CurrencySelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectViewController.swift; sourceTree = "<group>"; };
+		96B88E882175E65400A891E3 /* CurrencyNames.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CurrencyNames.json; sourceTree = "<group>"; };
+		96B88E8A2175E74B00A891E3 /* CurrencyCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCodes.swift; sourceTree = "<group>"; };
+		96B88E8C2175E89B00A891E3 /* GetCurrencyLookupData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrencyLookupData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +153,7 @@
 		96600EF920FCF3CF00CEBF35 /* WatchConvert */ = {
 			isa = PBXGroup;
 			children = (
+				96B88E872175E62600A891E3 /* Files */,
 				96600F4C20FE353B00CEBF35 /* Utils */,
 				96600F1220FCF90800CEBF35 /* REST */,
 				96600F0F20FCF71300CEBF35 /* Constants */,
@@ -166,6 +173,7 @@
 			children = (
 				96600F0D20FCF4D200CEBF35 /* ExchangeRates.swift */,
 				96600F1A20FDF10500CEBF35 /* Rates.swift */,
+				96B88E8A2175E74B00A891E3 /* CurrencyCodes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +192,7 @@
 			children = (
 				96600F1520FCFAC700CEBF35 /* Sample JSON */,
 				96600F1320FCF93F00CEBF35 /* GetExchangeData.swift */,
+				96B88E8C2175E89B00A891E3 /* GetCurrencyLookupData.swift */,
 			);
 			path = REST;
 			sourceTree = "<group>";
@@ -242,6 +251,14 @@
 				967D442A213E9DAC00C8AFE8 /* CurrencySelectViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		96B88E872175E62600A891E3 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				96B88E882175E65400A891E3 /* CurrencyNames.json */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +363,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B88E892175E65400A891E3 /* CurrencyNames.json in Resources */,
 				96600F1920FD018800CEBF35 /* ExchangeRatesSample.json in Resources */,
 				96600F0520FCF3D000CEBF35 /* LaunchScreen.storyboard in Resources */,
 				96600F0220FCF3D000CEBF35 /* Assets.xcassets in Resources */,
@@ -382,8 +400,10 @@
 				967D442B213E9DAC00C8AFE8 /* CurrencySelectViewController.swift in Sources */,
 				96600F1120FCF75200CEBF35 /* GlobalConstants.swift in Sources */,
 				96600F1B20FDF10500CEBF35 /* Rates.swift in Sources */,
+				96B88E8D2175E89B00A891E3 /* GetCurrencyLookupData.swift in Sources */,
 				96600F1420FCF93F00CEBF35 /* GetExchangeData.swift in Sources */,
 				96600EFB20FCF3CF00CEBF35 /* AppDelegate.swift in Sources */,
+				96B88E8B2175E74B00A891E3 /* CurrencyCodes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

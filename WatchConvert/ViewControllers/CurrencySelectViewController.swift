@@ -19,10 +19,15 @@ class CurrencySelectViewController: UIViewController {
 
     var dataResponse: NSDictionary?
     var exchangeRates: ExchangeRates?
+    var currenciesArray = [CurrencyCodes()]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let getCurrencyLookupData = GetCurrencyLookupData()
+        currenciesArray = getCurrencyLookupData.returnLookupData()
+        
         self.getWeatherDataFromService()
         
         setupUI()
