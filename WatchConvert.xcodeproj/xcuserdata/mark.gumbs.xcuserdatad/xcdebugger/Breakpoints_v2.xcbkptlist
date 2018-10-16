@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WatchConvert/ViewControllers/CurrencySelectViewController.swift"
-            timestampString = "561389475.110984"
+            timestampString = "561399804.866586"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
-            landmarkName = "CurrencySelectViewController"
-            landmarkType = "3">
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "sendCurrenciesToWatch()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

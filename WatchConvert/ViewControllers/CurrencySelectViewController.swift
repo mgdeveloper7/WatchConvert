@@ -51,12 +51,20 @@ class CurrencySelectViewController: UIViewController, UIPickerViewDataSource, UI
     
     func setupUI() {
         
+        outerView.clipsToBounds = true
+        outerView.clipsToBounds = true
+        outerView.layer.cornerRadius = 10
+        
         currencyPickerView.isHidden = true
         currencyFromLabel.text = ""
-        currencyToLabel.text = ""
+        currencyFromLabel.clipsToBounds = true
+        currencyFromLabel.layer.cornerRadius = 5
         
-        outerView.layer.cornerRadius = 10
-        outerView.clipsToBounds = true
+        currencyToLabel.text = ""
+        currencyToLabel.clipsToBounds = true
+        currencyToLabel.layer.cornerRadius = 5
+
+
     }
     
     // MARK:  Button press methods
