@@ -9,14 +9,23 @@
 import UIKit
 import WatchConnectivity
 
-class CurrencySelectViewController: UIViewController {
+class CurrencySelectViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var outerImage: UIImageView!
     @IBOutlet weak var outerView: UIView!
     @IBOutlet weak var currencyFrom: UITextField!
+    @IBOutlet weak var currencyFromLabel: UILabel!
+    @IBOutlet weak var currencyFromButton: UIButton!
+    
     @IBOutlet weak var currencyTo: UITextField!
+    @IBOutlet weak var currencyToLabel: UILabel!
+    @IBOutlet weak var currencyToButton: UIButton!
+    
     @IBOutlet weak var configureWatchButton: UIButton!
+    @IBOutlet weak var currencyPickerView: UIPickerView!
 
+    var currencyButtonPressed = "FROM"
+    
     var dataResponse: NSDictionary?
     var exchangeRates: ExchangeRates?
     var currenciesArray = [CurrencyCodes()]
@@ -41,6 +50,11 @@ class CurrencySelectViewController: UIViewController {
     // MARK:  UI Methods
     
     func setupUI() {
+        
+        currencyPickerView.isHidden = true
+        currencyFromLabel.text = ""
+        currencyToLabel.text = ""
+        
         outerView.layer.cornerRadius = 10
         outerView.clipsToBounds = true
     }
@@ -56,6 +70,17 @@ class CurrencySelectViewController: UIViewController {
 //        self.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func currencyButtonFromPressed(_ sender: AnyObject) {
+        
+        currencyPickerView.isHidden = false
+        currencyButtonPressed = "FROM"
+    }
+    
+    @IBAction func currencyButtonToPressed(_ sender: AnyObject) {
+        
+        currencyPickerView.isHidden = false
+        currencyButtonPressed = "TO"
+    }
     
     // MARK:  Web Service Methods
     
@@ -168,6 +193,47 @@ class CurrencySelectViewController: UIViewController {
             
             let message = "Cannot find Apple Watch to send settings to."
             Utility.showMessage(titleString: "Error", messageString: message )
+        }
+    }
+    
+    // MARK:  UIPickerView DataSource
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return currenciesArray.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        let currency = currenciesArray[row]
+        
+        if let code = currency.code, let desc = currency.desc {
+            return code + " : " + desc
+        }
+        return ""
+    }
+    
+    // MARK:  UIPickerView Delegate
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+
+        let currency = currenciesArray[row]
+        
+        if let code = currency.code, let desc = currency.desc {
+            
+            if currencyButtonPressed == "FROM" {
+                currencyFrom.text = code
+                currencyFromLabel.text = desc
+            }
+            else {
+                currencyTo.text = code
+                currencyToLabel.text = desc
+            }
+            
+            currencyPickerView.isHidden = true
         }
     }
 }

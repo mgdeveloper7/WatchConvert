@@ -158,11 +158,10 @@
 				96600F1220FCF90800CEBF35 /* REST */,
 				96600F0F20FCF71300CEBF35 /* Constants */,
 				96600F0C20FCF3E700CEBF35 /* Model */,
+				96B88E8E217615F900A891E3 /* StoryBoards */,
 				967D4429213E991400C8AFE8 /* ViewControllers */,
 				96600EFA20FCF3CF00CEBF35 /* AppDelegate.swift */,
-				96600EFE20FCF3CF00CEBF35 /* Main.storyboard */,
 				96600F0120FCF3D000CEBF35 /* Assets.xcassets */,
-				96600F0320FCF3D000CEBF35 /* LaunchScreen.storyboard */,
 				96600F0620FCF3D000CEBF35 /* Info.plist */,
 			);
 			path = WatchConvert;
@@ -259,6 +258,15 @@
 				96B88E882175E65400A891E3 /* CurrencyNames.json */,
 			);
 			path = Files;
+			sourceTree = "<group>";
+		};
+		96B88E8E217615F900A891E3 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				96600F0320FCF3D000CEBF35 /* LaunchScreen.storyboard */,
+				96600EFE20FCF3CF00CEBF35 /* Main.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

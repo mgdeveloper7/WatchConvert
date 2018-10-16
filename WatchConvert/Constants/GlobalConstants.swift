@@ -13,6 +13,8 @@ class GlobalConstants: NSObject {
     // Create a singleton so that the variables can be called outside of the class
     static let sharedInstance = GlobalConstants()
     
+    // NOTE:  Currency lookup codes from https://www.iban.com/currency-codes
+    
     // Test Data Flag
     static let UseTestDataURLs = false
     static let TestExchangeURL = "http://data.fixer.io/api/latest?access_key=a8bc1d778ac3c3a7138d85244f7d05ac&base=EUR"
